@@ -328,3 +328,58 @@ body.page-contact .ilz-launcher{bottom:104px}
 
 .tagline{flex-basis:100%;font-size:15px;font-weight:700;letter-spacing:.3px;margin:4px 0 0;color:#242428}
 .footer-in,.foot2-in{flex-wrap:wrap}
+
+/* UI/UX REVIEW ROUND 2026-11-20 (Variant 6, 42 approved items) */
+.post-card small,.faq-sign,.view-demo,.step-sec .get small{color:#242428}
+.chip{border-radius:0}
+.demo-label{border-radius:0}
+.why6 .w6,.post-card,.team-card,.step-sec .get,.pkg-card,.demo-card .thumb,.demo-visual,.apply-box{border-radius:9px}
+.sec-h{font-size:32px;letter-spacing:-.6px}
+.svc-line::before{top:-16px}
+.svc-cols .col{text-decoration:none;display:block}
+.svc-desc{display:block;font-size:15.5px;color:var(--grey);margin-top:8px;line-height:1.45}
+.chain6{text-align:left}
+.chain6 p{margin:8px 0 30px}
+.chain6 .chain-boxes{justify-content:flex-start}
+.hero6{padding-bottom:4px}
+.svc6{padding-top:24px}
+.svc-intro{font-size:18.5px;line-height:1.6;max-width:760px;margin-top:18px}
+.covers-num li{font-size:19.5px;padding:9px 0;border-bottom:1px solid var(--line);letter-spacing:0}
+.covers-num li b{color:var(--grey);font-size:15px;margin-right:14px}
+.diag-cap{font-size:16px;margin-top:12px;max-width:520px;line-height:1.55}
+.spec6{border:1.6px solid var(--ink);border-radius:9px;padding:20px;background:#fff}
+.spec6 img{height:40px;width:auto}
+.spec-sw{display:flex;gap:10px;margin:16px 0 12px}
+.spec-sw span{width:44px;height:44px;display:block}
+.spec-sw .sw-w{background:#fff;border:1.6px solid var(--ink)}
+.spec6 p{font-size:15.5px;color:var(--grey)}
+.zband-row{display:flex;gap:18px;padding:6px 0}
+.zband-row svg{flex:1;height:74px;width:100%}
+.faq-list{max-width:820px}
+.post-body{max-width:820px}
+.post-body p{text-align:left}
+.pkg-card.pkg-mid{box-shadow:inset 0 48px 0 #242428;padding-top:14px}
+.pkg-card.pkg-mid h3{color:#FFCC01}
+.post-date{font-size:14px;color:var(--grey);margin:-2px 0 6px}
+.soon-list{max-width:920px}
+.logo-block{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.logo-block div{border:1.6px solid var(--ink);padding:22px;display:flex;align-items:center;justify-content:center}
+.logo-block .lb-d{background:#242428}
+.logo-block img{max-width:240px;height:auto;width:100%}
+.back-link{font-weight:700}
+.back-link:hover{text-decoration:underline}
+.svc-d{font-size:15.5px;color:var(--grey);margin:6px 0 10px;line-height:1.45}
+.demo-visual img{display:block;width:100%;height:auto}
+.demo-card .thumb img{display:block;width:100%;height:auto}
+@media(min-width:761px){.soon-list{columns:2;column-gap:48px}}
+@media(max-width:760px){
+ .wm-m{display:none}
+ .about-ghost{max-width:104px}
+ .zband-row svg{height:52px}
+ .logo-block{grid-template-columns:1fr}
+}
+
+.btn-wht{background:#fff;color:#242428}
+
+/* V6-7 fix: shorthand padding on these sections had wiped out the standard side padding */
+.detail-hero,.contact6,.pf6-hero,.hero6,.svc6,.chain6,section.block{padding-left:28px;padding-right:28px}
