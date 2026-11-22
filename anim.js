@@ -1,6 +1,9 @@
 /* Interlinkz Variant 6 animation layer.
    Desktop only. Everything is animated FROM a hidden or offset state TO the
-   resting state, so with no GSAP the page is complete and settled. */
+   resting state, so with no GSAP the page is complete and settled.
+   Every ScrollTrigger gsap.from sets immediateRender: false, so nothing
+   is pre-hidden: each element sits fully visible in its final state
+   until its animation moment arrives, then plays and settles. */
 (function () {
   if (!window.matchMedia || !window.matchMedia("(min-width: 1024px)").matches) return;
   if (!window.gsap) return;
@@ -39,7 +42,7 @@
   /* joined groups: children arrive in sequence */
   document.querySelectorAll("[data-joins]").forEach(function (group) {
     gsap.from(group.children, {
-      y: 22, opacity: 0, duration: 0.55, stagger: 0.12, ease: "power2.out",
+      y: 22, opacity: 0, duration: 0.55, stagger: 0.12, ease: "power2.out", immediateRender: false,
       scrollTrigger: { trigger: group, start: "top 88%" }
     });
   });
@@ -49,7 +52,7 @@
     var nodes = group.querySelectorAll(".pnode");
     if (!nodes.length) return;
     gsap.from(nodes, {
-      scale: 0, transformOrigin: "center", duration: 0.45, stagger: 0.12, ease: "back.out(2)",
+      scale: 0, transformOrigin: "center", duration: 0.45, stagger: 0.12, ease: "back.out(2)", immediateRender: false,
       scrollTrigger: { trigger: group, start: "top 88%" }
     });
     gsap.to(nodes, {
